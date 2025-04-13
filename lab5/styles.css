@@ -1,0 +1,188 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+.grid-container {
+    display: grid;
+    min-height: 100vh;
+    grid-template-areas:
+        "header header" 
+        "nav nav"
+        "sidebar content"
+        "sidebar widget1"
+        "sidebar widget2"
+        "sidebar widget3"
+        "footer footer";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    gap: 10px;
+    padding: 10px;
+    
+
+}
+
+.header {
+    grid-area: header;
+    background-color: #3498db;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border: #000000 1px solid;
+    grid-gap: 0px;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: #2980b9;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    border: #000000 1px solid;
+    
+}
+
+.sidebar {
+    
+    grid-area: sidebar;
+    background-color: #2c3e50;
+    padding: 20px;
+    color: white;
+    
+    
+}
+
+.content {
+    grid-area: content;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border: #000000 1px solid;
+}
+
+.widget {
+    padding: 15px;
+    background-color: #f1c40f;
+    text-align: center;
+    border: #000000 1px solid;
+}
+
+.widget1 { grid-area: widget1; }
+.widget2 { grid-area: widget2; }
+.widget3 { grid-area: widget3; }
+
+.footer {
+    grid-area: footer;
+    background-color: #34495e;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    border: #000000 1px solid;
+    
+}
+
+/* Base styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+.grid-container {
+    display: grid;
+    min-height: 100vh;
+    grid-template-areas:
+        "header header" 
+        "nav nav"
+        "sidebar content"
+        "sidebar widget1"
+        "sidebar widget2"
+        "sidebar widget3"
+        "footer footer";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    /* Remove ALL gaps by default */
+    grid-gap: 0;
+    padding: 0; /* Remove container padding */
+}
+
+.header {
+    grid-area: header;
+    background-color: #3498db;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border: #000000 1px solid;
+    grid-gap: 0px;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: #2980b9;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    border: #000000 1px solid;
+    max-height: 10px;
+    
+}
+
+.sidebar {
+    
+    grid-area: sidebar;
+    background-color: #2c3e50;
+    padding: 20px;
+    color: white;
+    margin: 15px;
+    
+    
+}
+
+.content {
+    grid-area: content;
+    background-color: #b5d1d8;
+    padding: 20px;
+    border: #000000 1px solid;
+    margin: 15px;
+}
+
+.widget {
+    padding: 15px;
+    background-color: #969282;
+    text-align: center;
+    border: #000000 1px solid;
+    margin: 15px;
+}
+
+.widget1 { grid-area: widget1; }
+.widget2 { grid-area: widget2; }
+.widget3 { grid-area: widget3; }
+
+.footer {
+    grid-area: footer;
+    background-color: #34495e;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    border: #000000 1px solid;
+    max-height: 10px;
+    align-self: end;
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+    .grid-container {
+        grid-template-areas:
+            "header"
+            "nav"
+            "sidebar"
+            "content"
+            "widget1"
+            "widget2"
+            "widget3"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto 1fr auto auto auto auto;
+    }
+}

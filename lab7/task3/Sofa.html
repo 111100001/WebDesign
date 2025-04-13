@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sofa Personalization</title>
+    <script src="Sofa.js"></script>
+</head>
+<body>
+    <h4>Choose the colour you would like:</h4>
+    <input type="radio" name="color" onclick="changeColor('Red')"> Red
+    <input type="radio" name="color" onclick="changeColor('Blue')"> Blue
+    <input type="radio" name="color" onclick="changeColor('Orange')"> Orange
+    <input type="radio" name="color" onclick="changeColor('Green')"> Green
+
+    <h4>Choose the design you would like:</h4>
+    <button onclick="changeDesign(1)">Design 1</button>
+    <button onclick="changeDesign(2)">Design 2</button>
+    <button onclick="changeDesign(3)">Design 3</button><br>
+
+    <input type="text" id="designText" value="This is Design 1"><br>
+    <img id="sofaImage" src="" width="200"><br>
+
+    <button>Submit Request</button>
+</body>
+</html>
