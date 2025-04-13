@@ -1,0 +1,36 @@
+body {
+    background-color: #ffffcc;
+    color: #330000;
+    font-family: Verdana, sans-serif;
+}
+
+header, footer {
+    text-align: center;
+    background-color: #ccaa66;
+    padding: 10px;
+}
+
+#leftcolumn {
+    float: left;
+    width: 150px;
+    padding-top: 10px;
+}
+
+#rightcolumn {
+    margin-left: 150px;
+    background-color: #f1e8b0;
+    padding: 10px;
+}
+
+.navBar {
+    text-decoration: none;
+    margin: 15px;
+    display: block;
+    background-color: #E8D882;
+}
+
+
+.floatright {
+    padding-left: 40px;
+    float: right;
+}
